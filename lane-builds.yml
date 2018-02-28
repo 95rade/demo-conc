@@ -1,0 +1,45 @@
+environment:
+              cluster: 10.
+              name:  sit-p3
+              version: 1.0
+              namespaces:
+                      ace-acm: ace-p3
+                      ace-sp: ace-p3-sp
+                      fourier: fourier-p3
+              components:
+                      transcoder1:
+                              version: 7.01.12 (093)
+                              ip: 10.146.70.155
+                      transcoder2:
+                              version: 7.01.12 (093)
+                              ip: 10.22.237.186
+                      ace-acm:
+                              version:
+                              ip:
+                      ace-sp:
+                              version: 2.0.5
+                              ip: 
+                      fourier:
+                              version: 2.0.13
+                              ip: 172.27.223.230:8080
+                      clotho:
+                              version:
+                              ip:
+                      euphemia:
+                              version:
+                              ip:
+                      pillar:
+                              version: 1.52 -> {pillar-version}
+                              ip:  10.146.23.75 -> {pillar-ip}
+                      super8:
+                              version: 3.7.2  -> {super8-version}
+                              ip: 10.22.244.94
+                      player-android:
+                              version: 3.5.28.8  -> {player-android-version}
+                              avisa-resource-id: avisa-id-001
+                      player-ios:
+                              version: 1.42 -> {player-ios-version}
+                              avisa-resource-id: avisa-id-002
+                      player-js:
+                              version: 3.25.28   -> {player-js-version}
+                              avisa-resource-id: avisa-id-003
