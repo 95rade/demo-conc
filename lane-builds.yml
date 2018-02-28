@@ -1,7 +1,7 @@
 environment:
-              cluster: 10.
-              name:  sit-p3
-              version: 1.0
+              cluster-ip: 172.27.223.234 {cluster-ip}
+              name:  sit-p3 -> {env-name}
+              version: 1.0 -> {env-version}
               namespaces:
                       ace-acm: ace-p3  -> {ace-acm-ns}
                       ace-sp: ace-p3-sp -> {ace-sp-ns}
