@@ -3,31 +3,31 @@ environment:
               name:  sit-p3
               version: 1.0
               namespaces:
-                      ace-acm: ace-p3
-                      ace-sp: ace-p3-sp
-                      fourier: fourier-p3
+                      ace-acm: ace-p3  -> {ace-acm-ns}
+                      ace-sp: ace-p3-sp -> {ace-sp-ns}
+                      fourier: fourier-p3 -> {fourier-ns}
               components:
                       transcoder1:
-                              version: 7.01.12 (093)
-                              ip: 10.146.70.155
+                              version: 7.01.12 (093) -> {tx1-ver}
+                              ip: 10.146.70.155 -> {tx1-ip}
                       transcoder2:
-                              version: 7.01.12 (093)
-                              ip: 10.22.237.186
+                              version: 7.01.12 (093) -> {tx2-ver}
+                              ip: 10.22.237.186 -> {tx2-ip}
                       ace-acm:
-                              version:
-                              ip:
+                              version: 2.0.6 -> {ace-acm-ver}
+                              ip: 172.27.223.234:9859 -> {ace-acm-ip}
                       ace-sp:
-                              version: 2.0.5
-                              ip: 
+                              version: 2.0.6 -> {ace-sp-ver}
+                              ip: 172.27.223.234:9980 -> {ace-sp-ip}
                       fourier:
-                              version: 2.0.13
-                              ip: 172.27.223.230:8080
+                              version: 2.0.13 -> {fourier-ver}
+                              ip: 172.27.223.230:8080 -> {fourier-ip}
                       clotho:
-                              version:
-                              ip:
+                              version: 1.0
+                              ip: 1.1.1.1
                       euphemia:
-                              version:
-                              ip:
+                              version: 1.0
+                              ip: 2.2.2.2
                       pillar:
                               version: 1.52 -> {pillar-version}
                               ip:  10.146.23.75 -> {pillar-ip}
